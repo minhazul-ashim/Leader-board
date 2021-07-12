@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+
+    width: 80%;
+}
+
+
+
+/* Navbar Section */
+
+
+
+nav ul {
+
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    height: 94px;
+    
+}
+
+nav ul li {
+
+    margin-right: 20px;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+
+    color: rgba(0, 238, 255, 0.582);
+}
+
+nav ul span {
+
+    display: flex;
+    align-items: center;
+}
+
+nav ul span li img {
+
+    width: 51px;
+    height: 51px;
+}
+
+nav {
+
+    background: #562EFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Top Players Section */
+
+
+
+
+#top-players {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.top-player-blog {
+
+    background: #FFFFFF;
+    padding: 3% 3% 3% 3%;
+    margin-top: 3%;
+    border-radius: 10px;
+
+}
+
+
+.top-players-container {
+
+    display:flex;
+    flex-direction: column;
+}
+
+.top-player-title {
+
+    color: #562EFF;
+}
+
+
+.all-players {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10%;
+    padding: 5% 0;
+    border-bottom: 2px solid #e2e2e2;
+}
+
+.player-box {
+
+    display: flex;
+    align-items: center;
+}
+
+
+.player-img {
+
+    width: 56px;
+    height: 56px;
+    margin-right: 5%;
+}
+
+.player-img img {
+
+    width: 100%;
+}
+
+.top-player-title {
+
+    color: #562EFF;
+}
+
+
+
+
+/* Blog Division Styling */
+
+
+
+
+.top-blog-container {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.top-blog-title {
+
+    color:#562EFF;
+    padding: 4% 0;
+}
+
+.all-blogs {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 3%;
+}
+
+.blog-box {
+
+    display: flex;
+    justify-content: center;
+}
+
+.blog-img {
+
+   margin-right: 5%;
+}
+
+.blog-img img {
+
+    width: 177px;
+   height: 117px;
+}
+
+.blog-title span {
+
+    color: #888;
+}
+
+.blog-title p {
+
+    color:#562EFF;
+}
+
+
+
+
+
+
+/* Courses Section Styling */
+
+#courses {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.courses-container {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 3% 3% 3% 3%;
+    border-radius: 10px;
+}
+
+.section-title {
+
+    color:#562EFF;
+    padding-bottom: 3%;
+}
+
+.all-courses {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5%;
+}
+
+.course-box {
+
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2% 2% 0%;
+    box-shadow: 3px 3px 10px rgb(224, 214, 214);
+    border-radius: 10px;
+
+}
+
+.course-image img {
+
+    width: 224px;
+    height: 104px;
+}
+
+
+.course-info {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-rating i {
+
+    color: yellow;
+    
+}
+
+.course-rating .empty {
+
+    color: grey;
+}
+
+.course-duration {
+
+    color: red;
+    background: rgba(255, 0, 0, 0.418);
+    padding: 1% 5%;
+    border-radius: 30px;
+}
+
+
+
+
+
+/* Media Queries for Mobile Devices */
+
+@media only screen and (max-width: 991px) {
+
+    .all-players {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 5%;
+        grid-column-gap: 2%;
+        padding: 5% 0;
+        border-bottom: 2px solid #e2e2e2;
+    }
+
+    .all-blogs {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 3%;
+    }
+
+    .courses-container {
+
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        align-items: center;
+        padding: 3% 3% 3% 3%;
+        border-radius: 10px;
+    }
+
+    .all-courses {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 3%;
+    }
+
+    .course-box {
+
+        width: 100%;
+    }
+}

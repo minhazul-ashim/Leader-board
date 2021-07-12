@@ -301,6 +301,11 @@ nav {
         grid-row-gap: 3%;
     }
 
+.blog-box {
+
+    justify-content: flex-start;
+}
+
     .courses-container {
 
         display: flex;

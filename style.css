@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 
-* {
+/* Utilities */
+
+*{
 
     margin: 0;
     padding: 0;
@@ -10,34 +12,59 @@
 
 body {
 
-    background: #E5E5E5;
     font-family: 'Poppins', sans-serif;
+    background: rgb(216, 213, 213);
 }
 
 .container {
 
-    width: 80%;
+    width: 60%;
+}
+
+section {
+
+    margin: 1% 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
 
-/* Navbar Section */
 
+/* Navbar Design Styles */
 
+nav {
+
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 nav ul {
 
     display: flex;
-    list-style: none;
-    width: 100%;
     justify-content: space-between;
-    height: 94px;
-    
+    list-style: none;
+}
+
+nav ul span {
+
+    display: flex;
 }
 
 nav ul li {
 
-    margin-right: 20px;
+    padding: 4%;
+    color: yellow;
+    font-size: 1.1em;
+}
+
+nav ul li img {
+
+    width: 30px;
+    height: 30px;
 }
 
 nav a {
@@ -48,107 +75,66 @@ nav a {
 
 nav a:hover {
 
-    color: rgba(0, 238, 255, 0.582);
-}
-
-nav ul span {
-
-    display: flex;
-    align-items: center;
-}
-
-nav ul span li img {
-
-    width: 51px;
-    height: 51px;
-}
-
-nav {
-
-    background: #562EFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: rgb(165, 223, 247);
 }
 
 
 
 
-/* Top Players Section */
 
-
-
-
-#top-players {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* TOP SECTION */
 
 
 .top-player-blog {
 
-    background: #FFFFFF;
-    padding: 3% 3% 3% 3%;
-    margin-top: 3%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 2% 3% 2%;
     border-radius: 10px;
-
+    
 }
 
+.top-player-container {
 
-.top-players-container {
-
-    display:flex;
+    display: flex;
     flex-direction: column;
+    border-bottom: 1px solid rgb(206, 203, 203);
+    padding-bottom: 5%;
 }
 
 .top-player-title {
 
-    color: #562EFF;
+    color: blue;
+    padding: 5% 0;
 }
-
 
 .all-players {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10%;
-    padding: 5% 0;
-    border-bottom: 2px solid #e2e2e2;
+    grid-row-gap: 5%;
+    grid-column-gap: 2%;
 }
 
-.player-box {
+.player-details {
 
     display: flex;
     align-items: center;
+    font-size: 15px;
 }
 
+.player-image img {
 
-.player-img {
-
-    width: 56px;
-    height: 56px;
-    margin-right: 5%;
-}
-
-.player-img img {
-
-    width: 100%;
-}
-
-.top-player-title {
-
-    color: #562EFF;
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5em;
 }
 
 
 
 
-/* Blog Division Styling */
-
-
+/* Blog Section Styling */
 
 
 .top-blog-container {
@@ -157,9 +143,9 @@ nav {
     flex-direction: column;
 }
 
-.top-blog-title {
+.top-blogs-title {
 
-    color:#562EFF;
+    color: blue;
     padding: 4% 0;
 }
 
@@ -167,164 +153,174 @@ nav {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 3%;
+    grid-row-gap: 5%;
 }
 
 .blog-box {
 
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
 }
 
-.blog-img {
+.blog-image {
 
-   margin-right: 5%;
+    width: 40%;
+    margin-right: 3%;
 }
 
-.blog-img img {
+.blog-image img {
 
-    width: 177px;
-   height: 107px;
+    width: 100%;
 }
 
-.blog-title span {
-
-    color: #888;
-}
-
-.blog-title p {
-
-    color:#562EFF;
-}
-
-
-
-
-
-
-/* Courses Section Styling */
-
-#courses {
-
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-}
-
-.courses-container {
+.blog-info {
 
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    padding: 3% 3% 3% 3%;
+
+}
+
+.blog-info h4 {
+
+    font-size: 16px;
+}
+
+.blog-info p{
+
+    color: #777;
+    font-size: 12px;
+}
+
+.blog-info a {
+
+    text-decoration: none;
+    color: purple;
+    font-size: 15px;
+}
+
+
+
+
+/* Latest Courses Section Styling */
+
+
+
+.latest-course-container {
+
+    background: #ffffff;
+    padding: 0% 2% 2% 2%;
     border-radius: 10px;
 }
 
-.section-title {
+.latest-course-title {
 
-    color:#562EFF;
-    padding-bottom: 3%;
+    color: blue;
+    padding: 5% 0;
 }
 
-.all-courses {
+.all-course {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 5%;
+    grid-column-gap: 1%;
 }
 
 .course-box {
 
     display: flex;
     flex-direction: column;
-    padding: 2% 2% 2% 0%;
-    box-shadow: 3px 3px 10px rgb(224, 214, 214);
-    border-radius: 10px;
+}
 
+.course-image {
+
+    width: 100%;
 }
 
 .course-image img {
 
-    width: 224px;
-    height: 104px;
+    width: 100%;
 }
 
+.course-details {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.course-title {
+
+    height: 80px;
+}
 
 .course-info {
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    font-size: 0.7rem;
 }
 
 .course-rating i {
 
-    color: yellow;
-    
+    color: goldenrod;
 }
 
-.course-rating .empty {
+.course-rating span {
 
-    color: grey;
+    color: purple;
 }
 
 .course-duration {
 
     color: red;
-    background: rgba(255, 0, 0, 0.418);
-    padding: 1% 5%;
-    border-radius: 30px;
+    background: rgba(255, 0, 0, 0.274);
+    padding: 1% 4%;
+    border-radius: 10px;
 }
 
 
 
 
 
-/* Media Queries for Mobile Devices */
 
-@media only screen and (max-width: 991px) {
+@media (max-width:991px) {
+
+    
 
     .all-players {
+        position: relative;
 
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 5%;
-        grid-column-gap: 2%;
-        padding: 5% 0;
-        border-bottom: 2px solid #e2e2e2;
     }
-
+    
     .all-blogs {
 
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 3%;
     }
 
-.blog-box {
-
-    justify-content: flex-start;
-}
-
-    .courses-container {
+    .latest-course-container {
 
         display: flex;
         flex-direction: column;
-        background-color: #ffffff;
         align-items: center;
-        padding: 3% 3% 3% 3%;
-        border-radius: 10px;
     }
 
-    .all-courses {
+    .all-course {
 
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 3%;
+        grid-row-gap: 2%;
+        place-items: center;
+    }
+
+    .course-title {
+
+        height: auto;
+
+        font-size: 18px;
     }
 
     .course-box {
 
-        width: 100%;
+        width: 70%;
     }
+
 }

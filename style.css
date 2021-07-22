@@ -1,0 +1,70 @@
+/* Font Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+/* Utility Classes */
+
+
+
+body{
+
+    background: rgb(224, 222, 222);
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-title {
+
+    padding: 3% 0;
+}
+
+/* Header and Nav Sections */
+
+
+
+nav a {
+
+    color: white !important;
+}
+
+
+
+/* Top Players Section */
+
+
+
+#top-player-blog {
+
+    margin-top: 2%;
+}
+
+
+.all-players {
+
+    border-bottom: 1px solid #999;
+    padding-bottom: 5%;
+}
+
+
+
+/* Courses Section */
+
+
+
+.course-rating i {
+
+    color: goldenrod;
+}
+
+.course-duration {
+
+    color: red;
+    background: rgba(255, 0, 0, 0.308);
+    padding: 1% 4%;
+    border-radius: 20px;
+}
+
+
+
+
